@@ -1,4 +1,4 @@
-<html>
+<!DOCTYPE html>
 
 <head>
 <title>Maaltijdplanner</title>
@@ -9,10 +9,10 @@
    <header>
     <nav>
         <ul>
-            <li a href="#">Gerechten</li>
-            <li a href="#">Maaltijden</li>
-            <li a href="#">Aanbiedingen</li>
-            <li a href="#">klantenservice</li>
+            <li><a href="#">Gerechten</a></li>
+            <li><a href="#">Maaltijden</a></li>
+            <li><a href="#">Aanbiedingen</a></li>
+            <li><a href="#">klantenservice</a></li>
         </ul>
     </nav>
    </header>
