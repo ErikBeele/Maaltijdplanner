@@ -13,7 +13,7 @@ header {
 nav {
     display: flex;
     align-items: center;
-    background-color: gray;
+    background-color: rgb(225, 147, 45);
     color: white;
     padding: 8px 20px;
     width: 100%;
