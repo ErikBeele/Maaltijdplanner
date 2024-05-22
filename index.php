@@ -6,7 +6,16 @@
 </head>
 
 <body>
-    <p>hello there</p>
+   <header>
+    <nav>
+        <ul>
+            <li a href="#">Gerechten</li>
+            <li a href="#">Maaltijden</li>
+            <li a href="#">Aanbiedingen</li>
+            <li a href="#">klantenservice</li>
+        </ul>
+    </nav>
+   </header>
 </body>
 
 
