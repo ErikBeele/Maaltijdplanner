@@ -6,9 +6,16 @@ header {
 }
 
 nav {
+    display: flex;
+    align-items: center;
     background-color: gray;
     color: white;
     padding: 8px 0;
+}
+
+nav img {
+    height: 40px;
+    margin-right: 20px;
 }
 
 nav ul {
