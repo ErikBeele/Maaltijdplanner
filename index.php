@@ -9,6 +9,7 @@
 <body>
    <header>
     <nav>
+        <img src="logo.png" alt="logo">
         <ul>
             <li><a href="#">Gerechten</a></li>
             <li><a href="#">Maaltijden</a></li>
