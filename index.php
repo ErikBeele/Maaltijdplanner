@@ -3,6 +3,7 @@
 <head>
 <title>Maaltijdplanner</title>
 <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="navbar.css">
 </head>
 
 <body>
