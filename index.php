@@ -14,6 +14,7 @@
             <li><a href="#">Gerechten</a></li>
             <li><a href="#">Maaltijden</a></li>
             <li><a href="#">Aanbiedingen</a></li>
+            <li><a href="#">ingrediënten</a></li>
             <li><a href="#">klantenservice</a></li>
         </ul>
         <img src="list.png" alt="yourlist">
