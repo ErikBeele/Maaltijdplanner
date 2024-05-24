@@ -4,6 +4,7 @@
 <title>Maaltijdplanner</title>
 <link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="navbar.css">
+<link rel="stylesheet" href="form.css">
 </head>
 
 <body>
