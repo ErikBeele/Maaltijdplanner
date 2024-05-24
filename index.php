@@ -7,6 +7,7 @@
 </head>
 
 <body>
+    <div class="box">
    <header>
     <nav>
         <img src="logo.png" alt="websitelogo">
@@ -36,6 +37,8 @@
     </form>
 </div>
    
+
+    </div>
 </body>
 
 <footer>
