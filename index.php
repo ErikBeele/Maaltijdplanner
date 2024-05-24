@@ -37,5 +37,8 @@
    
 </body>
 
+<footer>
+    Contactgegevens:
+</footer>
 
 </html>
