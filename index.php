@@ -21,6 +21,20 @@
         <img src="profile.png" alt="profile">
     </nav>
    </header>
+
+<form action="gerechten.php" method="POST">
+      <label for="titelserie">Titel:</label><br>
+      <input type="text" id="titel" name="titel"><br>
+      <label for="rating">Rating:</label><br>
+      <input type="text" id="rating" name="rating"><br>
+      <label for="beschrijving">Beschrijving:</label><br>
+      <input type="text" id="beschrijving" name="beschrijving"><br>
+      <label for="awards">ingrediënten:</label><br>
+      <input type="text" id="ingrediënten" name="ingrediënten"><br>
+      <input type="button" value="send">
+
+</form>
+   
 </body>
 
 
