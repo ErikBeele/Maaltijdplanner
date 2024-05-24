@@ -39,7 +39,7 @@
 </div>
    
 <footer>
-    Contactgegevens:
+    Contactgegevens: 175777@student.horizoncollege.nl
 </footer>
     </div>
 </body>
