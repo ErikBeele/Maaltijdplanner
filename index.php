@@ -37,12 +37,12 @@
     </form>
 </div>
    
-
-    </div>
-</body>
-
 <footer>
     Contactgegevens:
 </footer>
+    </div>
+</body>
+
+
 
 </html>
