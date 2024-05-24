@@ -22,7 +22,8 @@
     </nav>
    </header>
 
-<form action="gerechten.php" method="POST">
+<div class= "form">
+    <form action="gerechten.php" method="POST">
       <label for="titelserie">Titel:</label><br>
       <input type="text" id="titel" name="titel"><br>
       <label for="rating">Rating:</label><br>
@@ -32,8 +33,8 @@
       <label for="awards">ingrediënten:</label><br>
       <input type="text" id="ingrediënten" name="ingrediënten"><br>
       <input type="button" value="send">
-
-</form>
+    </form>
+</div>
    
 </body>
 
