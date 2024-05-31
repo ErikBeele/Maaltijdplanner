@@ -23,6 +23,19 @@
         <img src="profile.png" alt="profile">
     </nav>
    </header>
+<?php
+    $dbhost = "localhost";
+    $dbname = "maaltijdplanner";
+    $dbuser = "bit_academy";
+    $dbpass = "bit_academy";
+
+try { 
+    $conn = new PDO("mysql:host=$dbhost;dbname=$dbname", $dbuser, $dbpass);
+    $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+
+    $stmt = $conn->prepare("SELECT * FROM gerechten ");
+    $stmt->execute(); 
+?>
 
 <div class= "form">
     <form action="gerechten.php" method="POST">
@@ -33,6 +46,22 @@
       <option value="vegatarisch">Vegatarisch</option>
     </form>
 </div>
+<?php
+} catch (PDOException $err) {
+    echo "Database avoided the connection. " . $err->getMessage() ;
+    exit();
+}
+
+
+
+
+
+?>
+
+</table>
+
+
+</form>
    
 <footer>
     Contactgegevens: 175777@student.horizoncollege.nl
