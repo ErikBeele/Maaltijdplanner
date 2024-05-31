@@ -27,8 +27,8 @@ $stmt->execute();
 </div>
 <?php
 } catch (PDOException $err) {
-echo "Database avoided the connection. " . $err->getMessage() ;
-exit();
+  echo "Database avoided the connection. " . $err->getMessage() ;
+  exit();
 }
 
 ?>
