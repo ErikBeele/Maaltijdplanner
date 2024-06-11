@@ -24,7 +24,7 @@ $stmt->execute();
   <input type="submit" value=submit>
 </form>
 </div>
-
+<div>test</div>
 <?php
 } catch (PDOException $err) {
   echo "Database avoided the connection. " . $err->getMessage() ;

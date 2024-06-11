@@ -39,12 +39,11 @@ try {
 
 <div class= "form">
     <form action="gerechten.php" method="POST">
-      <label for="gerecht">Titel:</label><br>
+      <label for="gerecht">Soort gerecht:</label><br>
       <select id="gerecht" name="gerecht"><br>
       <option value="vlees">Vlees</option>
       <option value="vis">Vis</option>
       <option value="vegatarisch">Vegatarisch</option>
-      <option submit>voeg toe</option>
     </form>
 </div>
 <?php
