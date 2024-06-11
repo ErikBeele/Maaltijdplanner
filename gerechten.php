@@ -22,9 +22,9 @@ $stmt->execute();
   <option value="vis">Vis</option>
   <option value="vegatarisch">Vegatarisch</option>
   <input type="submit" value=submit>
-
 </form>
 </div>
+
 <?php
 } catch (PDOException $err) {
   echo "Database avoided the connection. " . $err->getMessage() ;
