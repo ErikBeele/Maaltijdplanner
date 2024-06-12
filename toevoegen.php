@@ -9,7 +9,7 @@
 	        <option value="vis">Vis</option>
 	        <option value="vegetarisch">Vegetarisch</option>
         </select><br>
-        <label for="duur">Benodigde tijd:</label><br>
+        <label for="duur">Benodigde tijd in minuten:</label><br>
         <input type="int" id="tijd" name="tijd"><br>
         <label for="ingrediënt">Ingrediënten:</label><br>
         <input type="text" id="ingrediënt" name="ingrediënt"><br>
