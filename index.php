@@ -29,12 +29,21 @@
     $dbuser = "bit_academy";
     $dbpass = "bit_academy";
 
+    $dbuser2 = "root";
+    $dbpass2 = "";
+
 try { 
     $conn = new PDO("mysql:host=$dbhost;dbname=$dbname", $dbuser, $dbpass);
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
     $stmt = $conn->prepare("SELECT * FROM gerechten ");
     $stmt->execute(); 
+
+    $conn2 = new PDO("mysql:host=$dbhost;dbname=$dbname", $dbuser2, $dbpass2);
+    $conn2->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+
+    $stmt2 = $conn2->prepare("SELECT * FROM gerechten ");
+    $stmt2->execute(); 
 ?>
 
 <div class= "form">
