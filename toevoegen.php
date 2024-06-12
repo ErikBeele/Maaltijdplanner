@@ -8,7 +8,7 @@
 	        <option value="vlees">Vlees</option>
 	        <option value="vis">Vis</option>
 	        <option value="vegetarisch">Vegetarisch</option>
-        </select>
+        </select><br>
         <label for="duur">Benodigde tijd:</label><br>
         <input type="int" id="tijd" name="tijd"><br>
         <label for="ingrediënt">Ingrediënten:</label><br>
