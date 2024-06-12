@@ -45,15 +45,19 @@ try {
       <input type="radio" name="vegetarisch" value="c">Vegetarisch<br>
     </form>
 </div>
+
+<div class="aantalgerechten">
+    <form action="aantalgerechten.php" method="post">
+        <label for="num-gerechten">aantal gerechten</label>
+        <input type="number" id="num-gerechten" min="1" required>
+        <button type="submit">Verstuur</button>
+</form>
+
 <?php
 } catch (PDOException $err) {
     echo "Database avoided the connection. " . $err->getMessage() ;
     exit();
 }
-
-
-
-
 
 ?>
 
