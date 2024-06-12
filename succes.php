@@ -18,7 +18,7 @@
 <?php
 
 $titel = $_POST["titel"];
-$gerecht = $_POST["gerecht"];
+$gerecht = $_POST["type"];
 $duur = $_POST["tijd"];
 $ingrediënt = $_POST["ingrediënt"];
 $rating = $_POST["rating"];

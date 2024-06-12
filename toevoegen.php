@@ -2,9 +2,8 @@
     <form action="succes.php" method="POST">
         <label for="titel">Titel:</label><br>
         <input type="text" id="titel" name="titel"><br>
-        <label for="gerecht">Soort gerecht:</label><br>
-        <select id="gerecht" name="gerecht">
-            <option value="">is het gerecht vlees, vis of vegetarisch?</option>
+        <label for="type">is het gerecht vlees, vis of vegetarisch?</</label><br>
+        <select id="type" name="type">
 	        <option value="vlees">Vlees</option>
 	        <option value="vis">Vis</option>
 	        <option value="vegetarisch">Vegetarisch</option>
