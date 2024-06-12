@@ -33,14 +33,14 @@ try {
     $stmt->execute(); 
 ?>
 
-<div class= "form">
-    <form action="gerechten.php" method="POST">
-      <label for="gerecht">Soort gerecht:</label><br>
-      <input type="radio" name="vlees" value="a">Vlees<br>
-      <input type="radio" name="vis" value="b">Vis<br>
-      <input type="radio" name="vegetarisch" value="c">Vegetarisch<br>
-    </form>
-</div>
+<div class="form">
+            <form action="gerechten.php" method="POST">
+                <label for="gerecht">Soort gerecht:</label><br>
+                <input type="radio" name="gerecht" value="vlees"> Vlees<br>
+                <input type="radio" name="gerecht" value="vis"> Vis<br>
+                <input type="radio" name="gerecht" value="vegetarisch"> Vegetarisch<br>
+            </form>
+        </div>
 
 <div class="aantalgerechten">
         <form method="post" onsubmit="return validateForm()">
