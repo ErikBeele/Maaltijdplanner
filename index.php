@@ -29,30 +29,20 @@
     $dbuser = "bit_academy";
     $dbpass = "bit_academy";
 
-    $dbuser2 = "root";
-    $dbpass2 = "";
-
 try { 
     $conn = new PDO("mysql:host=$dbhost;dbname=$dbname", $dbuser, $dbpass);
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
     $stmt = $conn->prepare("SELECT * FROM gerechten ");
     $stmt->execute(); 
-
-    $conn2 = new PDO("mysql:host=$dbhost;dbname=$dbname", $dbuser2, $dbpass2);
-    $conn2->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-
-    $stmt2 = $conn2->prepare("SELECT * FROM gerechten ");
-    $stmt2->execute(); 
 ?>
 
 <div class= "form">
     <form action="gerechten.php" method="POST">
       <label for="gerecht">Soort gerecht:</label><br>
-      <select id="gerecht" name="gerecht"><br>
-      <option value="vlees">Vlees</option>
-      <option value="vis">Vis</option>
-      <option value="vegatarisch">Vegatarisch</option>
+      <input type="radio" name="vlees" value="a">Vlees<br>
+      <input type="radio" name="vis" value="b">Vis<br>
+      <input type="radio" name="vegetarisch" value="c">Vegetarisch<br>
     </form>
 </div>
 <?php
