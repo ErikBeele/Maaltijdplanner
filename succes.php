@@ -45,7 +45,7 @@ try {
     echo "<td> $duur </td>" . PHP_EOL;
     echo "<td> $rating </td>" . PHP_EOL;
     echo "</tr>";
-    echo "Product toegevoegd." . PHP_EOL;
+    echo "gerecht toegevoegd." . PHP_EOL;
 } catch (PDOException $err) {
     echo "Database avoided the connection. " . $err->getMessage();
     exit();
