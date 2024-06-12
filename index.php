@@ -47,11 +47,40 @@ try {
 </div>
 
 <div class="aantalgerechten">
-    <form action="aantalgerechten.php" method="post">
-        <label for="num-gerechten">aantal gerechten</label>
-        <input type="number" id="num-gerechten" min="1" required>
-        <button type="submit">Verstuur</button>
-</form>
+        <form method="post" onsubmit="return validateForm()">
+            <label for="num-gerechten">Selecteer het aantal Gerechten voor deze week:</label>
+            <input type="number" id="num-gerechten" name="num-gerechten" min="1" max="7" required>
+            <input type="checkbox" id="confirm-checkbox" onchange="toggleInput()"> Ik bevestig mijn keuze
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <script>
+        function validateForm() {
+            var numGerechten = document.getElementById('num-gerechten').value;
+            if (numGerechten > 7) {
+                alert("Het aantal Gerechten kan niet hoger zijn dan 7.");
+                return false;
+            }
+            return true;
+        }
+
+        document.getElementById('num-gerechten').addEventListener('input', function() {
+            if (this.value > 7) {
+                this.value = 7;
+            }
+        });
+
+        function toggleInput() {
+            var checkbox = document.getElementById('confirm-checkbox');
+            var input = document.getElementById('num-gerechten');
+            if (checkbox.checked) {
+                input.disabled = true;
+            } else {
+                input.disabled = false;
+            }
+        }
+    </script>
 
 <?php
 } catch (PDOException $err) {
