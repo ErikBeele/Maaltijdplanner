@@ -32,7 +32,7 @@ try {
     $conn = new PDO("mysql:host=$dbhost;dbname=$dbname", $dbuser, $dbpass);
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     
-    $query = "INSERT INTO gerechten (titel, type, ingrediënten, tijd, rating)
+    $query = "INSERT INTO gerechten (titel, Type, ingrediënten, tijd, rating)
     VALUES ('$titel', '$gerecht', '$ingrediënt', $duur, '$rating')";
 
     $stmt = $conn->prepare($query);
@@ -41,7 +41,7 @@ try {
     echo "<tr>";
     echo "<td> $titel </td>" . PHP_EOL;
     echo "<td> $gerecht </td>" . PHP_EOL;
-    echo "<td> $ingrediënten </td>" . PHP_EOL;
+    echo "<td> $ingrediënt </td>" . PHP_EOL;
     echo "<td> $duur </td>" . PHP_EOL;
     echo "<td> $rating </td>" . PHP_EOL;
     echo "</tr>";
