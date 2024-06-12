@@ -1,13 +1,8 @@
 
 header {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 1000;
+    max-width: 800px;
+    margin: 20px auto
+
 }
 
 nav {
@@ -15,7 +10,7 @@ nav {
     align-items: center;
     background-color: rgb(225, 147, 45);
     color: white;
-    padding: 8px 20px;
+    padding: 15px 20px;
     width: 100%;
     box-sizing: border-box;
 }

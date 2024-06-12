@@ -12,8 +12,8 @@
    <header>
     <nav>
         <ul>
-            <li><a href="#">Gerechten</a></li>
-            <li><a href="#">Maaltijden</a></li>
+            <li><a href="toevoegen.php">Gerechten</a></li>
+            <li><a href="overzicht.php">Maaltijden</a></li>
             <li><a href="#">Aanbiedingen</a></li>
             <li><a href="#">ingrediënten</a></li>
         </ul>
