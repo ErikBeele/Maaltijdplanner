@@ -96,8 +96,9 @@ try {
 </form>
    
 <footer>
-Don van Gulik: 175736@student.horizoncollege.nl
-Erik Beelen: 175777@student.horizoncollege.nl
+    <p>MADE BY:</p>
+<p>Don van Gulik: 175736@student.horizoncollege.nl</p>
+<p>Erik Beelen: 175777@student.horizoncollege.nl</p>
 </footer>
     </div>
 </body>
