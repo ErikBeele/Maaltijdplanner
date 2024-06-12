@@ -1,5 +1,5 @@
 <<html>
-    <form action="verwerk.php" method="POST">
+    <form action="succes.php" method="POST">
         <label for="titel">Titel:</label><br>
         <input type="text" id="titel" name="titel"><br>
         <label for="gerecht">Soort gerecht:</label><br>
