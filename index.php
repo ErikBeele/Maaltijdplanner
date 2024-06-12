@@ -34,13 +34,17 @@ try {
 ?>
 
 <div class="form">
-            <form action="gerechten.php" method="POST">
-                <label for="gerecht">Soort gerecht:</label><br>
-                <input type="radio" name="gerecht" value="vlees"> Vlees<br>
-                <input type="radio" name="gerecht" value="vis"> Vis<br>
-                <input type="radio" name="gerecht" value="vegetarisch"> Vegetarisch<br>
-            </form>
-        </div>
+    <form action="gerechten.php" method="POST">
+        <label for="gerecht">Kies een voorkeur gerecht:</label><br>
+        <input type="checkbox" name="gerecht[]" value="vlees" id="vlees">
+        <label for="vlees" class="vlees">Vlees</label><br>
+        <input type="checkbox" name="gerecht[]" value="vis" id="vis">
+        <label for="vis" class="vis">Vis</label><br>
+        <input type="checkbox" name="gerecht[]" value="vegetarisch" id="vegetarisch">
+        <label for="vegetarisch" class="vegetarisch">Vegetarisch</label><br>
+    </form>
+</div>
+
 
 <div class="aantalgerechten">
         <form method="post" onsubmit="return validateForm()">
