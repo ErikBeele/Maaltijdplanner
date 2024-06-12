@@ -52,8 +52,9 @@ try {
 }
 ?>
 
-<a href="boodschappen.php">product toevoegen</a>
-<a href="index.php">Terug naar lijst</a>
+<a href="toevoegen.php">gerechten toevoegen</a>
+<a href="index.php">Gerechten kiezen</a>
+<a href="overzicht.php">Gekozen gerechten zien</a>
 
 </table>
     </div>
