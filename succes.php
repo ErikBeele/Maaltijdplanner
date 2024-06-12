@@ -39,9 +39,11 @@ try {
     $stmt->execute();
 
     echo "<tr>";
-    echo "<td> $product </td>" . PHP_EOL;
-    echo "<td> $merk </td>" . PHP_EOL;
-    echo "<td> $prijs </td>" . PHP_EOL;
+    echo "<td> $titel </td>" . PHP_EOL;
+    echo "<td> $gerecht </td>" . PHP_EOL;
+    echo "<td> $ingrediënten </td>" . PHP_EOL;
+    echo "<td> $duur </td>" . PHP_EOL;
+    echo "<td> $rating </td>" . PHP_EOL;
     echo "</tr>";
     echo "Product toegevoegd." . PHP_EOL;
 } catch (PDOException $err) {
