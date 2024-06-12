@@ -64,7 +64,8 @@ try {
 </form>
    
 <footer>
-    Contactgegevens: 175777@student.horizoncollege.nl
+Don van Gulik: 175736@student.horizoncollege.nl
+Erik Beelen: 175777@student.horizoncollege.nl
 </footer>
     </div>
 </body>
