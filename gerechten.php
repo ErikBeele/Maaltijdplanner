@@ -15,7 +15,7 @@ $stmt->execute();
 
 <div class= "form">
     
-<form action="gerechten.php" method="POST">
+<form action="overzicht.php" method="POST">
   <label for="gerecht">Soort gerecht:</label><br>
   <select id="gerecht" name="gerecht"><br>
   <option value="vlees">Vlees</option>
@@ -27,7 +27,7 @@ $stmt->execute();
 <div>test</div>
 <?php
 } catch (PDOException $err) {
-  echo "Database avoided the connection. " . $err->getMessage() ;
+  echo "Database avoided the connection. " . $err->getMessage();
   exit();
 }
 
