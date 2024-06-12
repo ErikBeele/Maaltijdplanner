@@ -24,7 +24,7 @@ $ingrediënt = $_POST["ingrediënt"];
 $rating = $_POST["rating"];
 
 $dbhost = "localhost";
-$dbname = "boodschappen";
+$dbname = "maaltijdplanner";
 $dbuser = "bit_academy";
 $dbpass = "bit_academy";
 
