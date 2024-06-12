@@ -40,10 +40,9 @@ try {
 <div class= "form">
     <form action="gerechten.php" method="POST">
       <label for="gerecht">Soort gerecht:</label><br>
-      <select id="gerecht" name="gerecht"><br>
-      <option value="vlees">Vlees</option>
-      <option value="vis">Vis</option>
-      <option value="vegatarisch">Vegatarisch</option>
+      <input type="radio" name="vlees" value="a">Vlees<br>
+      <input type="radio" name="vis" value="b">Vis<br>
+      <input type="radio" name="vegetarisch" value="c">Vegetarisch<br>
     </form>
 </div>
 <?php
