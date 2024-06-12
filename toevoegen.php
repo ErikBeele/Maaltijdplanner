@@ -3,7 +3,12 @@
         <label for="titel">Titel:</label><br>
         <input type="text" id="titel" name="titel"><br>
         <label for="gerecht">Soort gerecht:</label><br>
-        <input type="text" id="gerecht" name="gerecht"><br>
+        <select id="gerecht" name="gerecht">
+            <option value="">is het gerecht vlees, vis of vegetarisch?</option>
+	        <option value="vlees">Vlees</option>
+	        <option value="vis">Vis</option>
+	        <option value="vegetarisch">Vegetarisch</option>
+        </select><br>
         <label for="duur">Benodigde tijd:</label><br>
         <input type="int" id="tijd" name="tijd"><br>
         <label for="ingrediënt">Ingrediënten:</label><br>
