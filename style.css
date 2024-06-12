@@ -61,6 +61,7 @@ nav ul li a:hover {
 
 .form, .aantalgerechten {
     margin-bottom: 20px;
+    height: 200px;
 }
 
 label {
