@@ -25,15 +25,15 @@ $rating = $_POST["rating"];
 
 $dbhost = "localhost";
 $dbname = "boodschappen";
-$dbuser = "root";
-$dbpass = "";
+$dbuser = "bit_academy";
+$dbpass = "bit_academy";
 
 try { 
     $conn = new PDO("mysql:host=$dbhost;dbname=$dbname", $dbuser, $dbpass);
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     
-    $query = "INSERT INTO lijst (productnaam, merk, prijs)
-    VALUES ('$product', '$merk', $prijs)";
+    $query = "INSERT INTO gerechten (titel, type, ingrediënten, tijd, rating)
+    VALUES ('$titel', '$gerecht', '$ingrediënt', $duur, '$rating')";
 
     $stmt = $conn->prepare($query);
     $stmt->execute();
