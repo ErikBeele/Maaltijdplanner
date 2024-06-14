@@ -1,7 +1,8 @@
 
 header {
-    max-width: 800px;
-    margin: 20px auto
+    width: 820px;
+    margin: 20px auto;
+    padding: 10px;
 
 }
 
@@ -36,5 +37,6 @@ nav ul li a {
     text-decoration: none;
     color: white;
     font-weight: bold;
+    margin: 100px;
 }
 
