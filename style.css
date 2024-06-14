@@ -77,11 +77,14 @@ input[type="radio"], input[type="checkbox"] {
 }
 
 input[type="number"] {
-    padding: 8px;
+    
     margin-bottom: 10px;
     border: 1px solid #ccc;
-    border-radius: 3px;
     box-sizing: border-box;
+    position: relative;
+    bottom: 34px;
+    left: 370px;
+
 }
 
 button {
