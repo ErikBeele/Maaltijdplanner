@@ -129,3 +129,10 @@ footer a:hover {
     background-color: #77dd77;
 }
 
+.toegevoegd {
+    background-color: #77dd77;
+    border: 1px solid black;
+    text-align: left;
+    padding: 8px;
+    width: 110px;
+}
