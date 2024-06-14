@@ -12,7 +12,7 @@
    <header>
     <nav>
         <ul>
-            <li><a href="toevoegen.php">Gerechten</a></li>
+            <li><a href="toevoegen.php">Toevoegen</a></li>
             <li><a href="overzicht.php">Maaltijden</a></li>
         </ul>
     </nav>
