@@ -12,7 +12,6 @@
    <header>
     <nav>
         <ul>
-            <li><a href="toevoegen.php">Gerechten toevoegen</a></li>
             <li><a href="overzicht.php">Maaltijden bekijken</a></li>
         </ul>
     </nav>
