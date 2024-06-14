@@ -34,11 +34,11 @@ try {
 <div class="form">
     <form action="gerechten.php" method="POST">
         <label for="gerecht">Kies een voorkeur gerecht:</label><br>
-        <input type="checkbox" name="gerecht[]" value="vlees" id="vlees">
+        <input type="checkbox" class="gerechtenbox" name="gerecht[]" value="vlees" id="vlees">
         <label for="vlees" class="vlees">Vlees</label><br>
-        <input type="checkbox" name="gerecht[]" value="vis" id="vis">
+        <input type="checkbox" class="gerechtenbox" name="gerecht[]" value="vis" id="vis">
         <label for="vis" class="vis">Vis</label><br>
-        <input type="checkbox" name="gerecht[]" value="vegetarisch" id="vegetarisch">
+        <input type="checkbox" class="gerechtenbox" name="gerecht[]" value="vegetarisch" id="vegetarisch">
         <label for="vegetarisch" class="vegetarisch">Vegetarisch</label><br>
     </form>
 </div>
@@ -48,7 +48,7 @@ try {
         <form method="post" onsubmit="return validateForm()">
             <label for="num-gerechten">Selecteer het aantal Gerechten voor deze week:</label>
             <input type="number" id="num-gerechten" name="num-gerechten" min="1" max="7" required>
-            <input type="checkbox" id="confirm-checkbox" onchange="toggleInput()"> Ik bevestig mijn keuze
+            <input type="checkbox" id="confirm" onchange="toggleInput()"> Ik bevestig mijn keuze
             <button type="submit">Submit</button>
         </form>
     </div>

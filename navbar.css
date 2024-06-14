@@ -43,3 +43,8 @@ nav ul li a {
     margin: 100px;
 }
 
+.gerechtenbox {
+    position: relative;
+    right: 20px;
+    bottom: -20px;
+}
