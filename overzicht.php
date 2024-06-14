@@ -47,8 +47,8 @@ try {
 }
 ?>
 
-<th><a href="toevoegen.php">Gerecht toevoegen</a></th>
-<th><a href="index.php">Gerechten plannen</a></th>
+<th><a href="toevoegen.php">Toevoegen</a></th>
+<th><a href="index.php">Gerechtebn</a></th>
 
 </table>
 </body>
