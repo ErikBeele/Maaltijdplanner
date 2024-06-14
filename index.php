@@ -33,13 +33,13 @@ try {
 
 <div class="form">
     <form action="gerechten.php" method="POST">
-        <label for="gerecht">Kies een voorkeur gerecht:</label><br>
+        <label for="gerecht">Kies hier tussen de 3 voorkeur Ingrediënten</label><br>
         <input type="checkbox" class="gerechtenbox" name="gerecht[]" value="vlees" id="vlees">
-        <label for="vlees" class="vlees">Vlees</label><br>
+        <label for="vlees" class="vlees">VLEES</label><br>
         <input type="checkbox" class="gerechtenbox" name="gerecht[]" value="vis" id="vis">
-        <label for="vis" class="vis">Vis</label><br>
+        <label for="vis" class="vis">VIS</label><br>
         <input type="checkbox" class="gerechtenbox" name="gerecht[]" value="vegetarisch" id="vegetarisch">
-        <label for="vegetarisch" class="vegetarisch">Vegetarisch</label><br>
+        <label for="vegetarisch" class="vegetarisch">VEGATARISCH</label><br>
     </form>
 </div>
 
