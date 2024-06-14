@@ -1,8 +1,27 @@
-<?php
-$dbhost = "localhost";
-$dbname = "boodschappen";
-$dbuser = "bit_academy";
-$dbpass = "bit_academy";
+<!DOCTYPE html>
+
+<head>
+<title>Maaltijdplanner</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="navbar.css">
+<link rel="stylesheet" href="form.css">
+</head>
+
+<body>
+    <div class="box">
+   <header>
+    <nav>
+        <ul>
+            <li><a href="toevoegen.php">Gerechten toevoegen</a></li>
+            <li><a href="overzicht.php">Maaltijden bekijken</a></li>
+        </ul>
+    </nav>
+   </header>
+   <?php
+    $dbhost = "localhost";
+    $dbname = "boodschappen";
+    $dbuser = "bit_academy";
+    $dbpass = "bit_academy";
 
 try { 
     $conn = new PDO("mysql:host=$dbhost;dbname=$dbname", $dbuser, $dbpass);

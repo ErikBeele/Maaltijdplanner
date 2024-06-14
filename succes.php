@@ -1,8 +1,22 @@
 <!DOCTYPE html>
+
 <head>
-    <link rel="stylesheet" href="style.css">
-    <title>Bevestiging toevoeging</title>
+<title>Maaltijdplanner</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="navbar.css">
+<link rel="stylesheet" href="form.css">
 </head>
+
+<body>
+    <div class="box">
+   <header>
+    <nav>
+        <ul>
+            <li><a href="toevoegen.php">Gerechten toevoegen</a></li>
+            <li><a href="overzicht.php">Maaltijden bekijken</a></li>
+        </ul>
+    </nav>
+   </header>
 
 <h2>Toegevoegd</h2>
 

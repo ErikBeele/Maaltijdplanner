@@ -1,4 +1,23 @@
-<<html>
+<!DOCTYPE html>
+
+<head>
+<title>Maaltijdplanner</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="navbar.css">
+<link rel="stylesheet" href="form.css">
+</head>
+
+<body>
+    <div class="box">
+   <header>
+    <nav>
+        <ul>
+            <li><a href="toevoegen.php">Gerechten toevoegen</a></li>
+            <li><a href="overzicht.php">Maaltijden bekijken</a></li>
+        </ul>
+    </nav>
+   </header>
+
     <form action="succes.php" method="POST">
         <label for="titel">Titel:</label><br>
         <input type="text" id="titel" name="titel"><br>
