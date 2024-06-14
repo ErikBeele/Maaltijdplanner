@@ -45,13 +45,14 @@ try {
 
 
 <div class="aantalgerechten">
-        <form method="post" onsubmit="return validateForm()">
+        <form method="post">
             <label for="num-gerechten">Selecteer het aantal Gerechten voor deze week:</label>
             <input type="number" id="num-gerechten" name="num-gerechten" min="1" max="7" required>
             <input type="checkbox" id="confirm" onchange="toggleInput()"> Ik bevestig mijn keuze
-            <button type="submit">Submit</button>
+            <button type="submit" href="toevoegen.php">Submit</button>
         </form>
     </div>
+
 
     <script>
         function validateForm() {
@@ -70,7 +71,7 @@ try {
         });
 
         function toggleInput() {
-            var checkbox = document.getElementById('confirm-checkbox');
+            var checkbox = document.getElementById('confirm');
             var input = document.getElementById('num-gerechten');
             if (checkbox.checked) {
                 input.disabled = true;
