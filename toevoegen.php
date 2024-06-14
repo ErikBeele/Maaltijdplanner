@@ -12,7 +12,7 @@
    <header>
     <nav>
         <ul>
-            <li><a href="overzicht.php">Maaltijden bekijken</a></li>
+            <li><a href="overzicht.php">Maaltijden</a></li>
         </ul>
     </nav>
    </header>
