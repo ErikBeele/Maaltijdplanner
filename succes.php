@@ -9,7 +9,7 @@
 <table class="toegevoegd">
     <tr>
         <th>titel</th>
-        <th>soort gerecht</th>
+        <th>gerecht</th>
         <th>duur</th>
         <th>ingrediënten</th>
         <th>rating</th>
