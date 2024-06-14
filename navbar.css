@@ -3,6 +3,8 @@ header {
     width: 820px;
     margin: 20px auto;
     padding: 10px;
+    position: relative;
+    right: 20px;
 
 }
 
