@@ -23,7 +23,7 @@ try {
             echo "<tr>";
             echo "<td>" . $row['titel'] . "</td>" . PHP_EOL;
             echo "<td>" . $row['type'] . "</td>" . PHP_EOL;
-            echo "<td>" . $row['ingrediënten'] . "</td>" . PHP_EOL;
+            echo "<td>" . $row['ingrediënt 1'] . "</td>" . PHP_EOL;
             echo "<td>" . $row['tijd'] . "</td>" . PHP_EOL;
             echo "<td>" . $row['rating'] . "</td>" . PHP_EOL;
             echo "</tr>";

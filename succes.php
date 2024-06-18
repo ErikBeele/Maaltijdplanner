@@ -25,7 +25,12 @@
         <th>titel</th>
         <th>gerecht</th>
         <th>duur</th>
-        <th>ingrediënten</th>
+        <th>ingrediënt 1</th>
+        <th>ingrediënt 2</th>
+        <th>ingrediënt 3</th>
+        <th>ingrediënt 4</th>
+        <th>ingrediënt 5</th>
+        <th>ingrediënt 6</th>
         <th>rating</th>
     </tr>
 
@@ -33,8 +38,13 @@
 
 $titel = $_POST["titel"];
 $gerecht = $_POST["type"];
+$ingrediënt1 = $_POST["ingrediënt 1"];
+$ingrediënt2 = $_POST["ingrediënt 2"];
+$ingrediënt3 = $_POST["ingrediënt 3"];
+$ingrediënt4 = $_POST["ingrediënt 4"];
+$ingrediënt5 = $_POST["ingrediënt 5"];
+$ingrediënt6 = $_POST["ingrediënt 6"];
 $duur = $_POST["tijd"];
-$ingrediënt = $_POST["ingrediënt"];
 $rating = $_POST["rating"];
 
 $dbhost = "localhost";
@@ -47,7 +57,7 @@ try {
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     
     $query = "INSERT INTO gerechten (titel, Type, ingrediënten, tijd, rating)
-    VALUES ('$titel', '$gerecht', '$ingrediënt', $duur, '$rating')";
+    VALUES ('$titel', '$gerecht', '$ingrediënt1', '$ingrediënt2', '$ingrediënt3', '$ingrediënt4', '$ingrediënt5', '$ingrediënt6', $duur, '$rating')";
 
     $stmt = $conn->prepare($query);
     $stmt->execute();
@@ -55,7 +65,12 @@ try {
     echo "<tr>";
     echo "<td> $titel </td>" . PHP_EOL;
     echo "<td> $gerecht </td>" . PHP_EOL;
-    echo "<td> $ingrediënt </td>" . PHP_EOL;
+    echo "<td> $ingrediënt1 </td>" . PHP_EOL;
+    echo "<td> $ingrediënt2 </td>" . PHP_EOL;
+    echo "<td> $ingrediënt3 </td>" . PHP_EOL;
+    echo "<td> $ingrediënt4 </td>" . PHP_EOL;
+    echo "<td> $ingrediënt5 </td>" . PHP_EOL;
+    echo "<td> $ingrediënt6 </td>" . PHP_EOL;
     echo "<td> $duur </td>" . PHP_EOL;
     echo "<td> $rating </td>" . PHP_EOL;
     echo "</tr>";
