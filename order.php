@@ -35,3 +35,11 @@ try {
     exit(); 
 }
 ?>
+
+<html>
+
+<a href="toevoegen.php">Gerechten toevoegen</a>
+<a href="index.php">Gerechten kiezen</a>
+<a href="overzicht.php">Overzicht</a>
+
+</html>

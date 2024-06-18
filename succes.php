@@ -13,7 +13,7 @@
     <nav>
         <ul>
             <li><a href="toevoegen.php">Toevoegen</a></li>
-            <li><a href="overzicht.php">Maaltijden bekijken</a></li>
+            <li><a href="overzicht.php">Maaltijd</a></li>
         </ul>
     </nav>
    </header>
@@ -66,9 +66,9 @@ try {
 }
 ?>
 
-<a href="toevoegen.php">gerechten toevoegen</a>
+<a href="toevoegen.php">Gerechten toevoegen</a>
 <a href="index.php">Gerechten kiezen</a>
-<a href="overzicht.php">Gekozen gerechten zien</a>
+<a href="overzicht.php">Overzicht</a>
 
 </table>
     </div>

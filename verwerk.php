@@ -13,11 +13,11 @@
     <nav>
         <ul>
             <li><a href="toevoegen.php">Toevoegen</a></li>
-            <li><a href="overzicht.php">Maaltijden</a></li>
+            <li><a href="overzicht.php">Maaltijd</a></li>
         </ul>
     </nav>
    </header>
 
 <?php
 
-?>
+?> 
