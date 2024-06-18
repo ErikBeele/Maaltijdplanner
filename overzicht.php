@@ -27,6 +27,7 @@
         <th>ingrediënt 3</th>
         <th>ingrediënt 4</th>
         <th>ingrediënt 5</th>
+        <th>ingrediënt 6</th>
         <th>duur</th>
         <th>rating</th>
     </tr>
@@ -50,6 +51,11 @@ try {
         echo "<td>" . $row['titel'] . "</td>" . PHP_EOL;
         echo "<td>" . $row['type'] . "</td>" . PHP_EOL;
         echo "<td>" . $row['ingrediënt 1'] . "</td>" . PHP_EOL;
+        echo "<td>" . $row['ingrediënt 2'] . "</td>" . PHP_EOL;
+        echo "<td>" . $row['ingrediënt 3'] . "</td>" . PHP_EOL;
+        echo "<td>" . $row['ingrediënt 4'] . "</td>" . PHP_EOL;
+        echo "<td>" . $row['ingrediënt 5'] . "</td>" . PHP_EOL;
+        echo "<td>" . $row['ingrediënt 6'] . "</td>" . PHP_EOL;
         echo "<td>" . $row['tijd'] . "</td>" . PHP_EOL;
         echo "<td>" . $row['rating'] . "</td>" . PHP_EOL;
         echo "</tr>";
