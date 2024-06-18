@@ -1,4 +1,4 @@
-DROP DATABASE IF EXISTS `netland`;
+DROP DATABASE IF EXISTS `Maaltijdplanner`;
 
 Create DATABASE Maaltijdplanner;
 
