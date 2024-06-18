@@ -1,3 +1,5 @@
+DROP DATABASE IF EXISTS `netland`;
+
 Create DATABASE Maaltijdplanner;
 
 USE Maaltijdplanner;
