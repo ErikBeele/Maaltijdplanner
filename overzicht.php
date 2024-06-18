@@ -13,10 +13,20 @@
     <nav>
         <ul>
             <li><a href="toevoegen.php">Toevoegen</a></li>
-            <li><a href="overzicht.php">Maaltijden bekijken</a></li>
+            <li><a href="overzicht.php">Maaltijden</a></li>
         </ul>
     </nav>
    </header>
+
+   <table class="toegevoegd">
+    <tr>
+        <th>titel</th>
+        <th>gerecht</th>
+        <th>inrgediënten</th>
+        <th>duur</th>
+        <th>rating</th>
+    </tr>
+
    <?php
     $dbhost = "localhost";
     $dbname = "maaltijdplanner";
@@ -48,7 +58,7 @@ try {
 ?>
 
 <th><a href="toevoegen.php">Toevoegen</a></th>
-<th><a href="index.php">Gerechtebn</a></th>
+<th><a href="index.php">Gerechten</a></th>
 
 </table>
 </body>
