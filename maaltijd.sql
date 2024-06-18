@@ -7,7 +7,12 @@ Create TABLE Gerechten (
     PRIMARY KEY (ID),
     titel Varchar(255) NOT NULL,
     type ENUM('vlees', 'vis', 'vegetarisch') NOT NULL,
-    ingrediënten text NOT NULL,
+    ingrediënt1 text NOT NULL,
+    ingrediënt2 text NOT NULL,
+    ingrediënt3 text NOT NULL,
+    ingrediënt4 text NOT NULL,
+    ingrediënt5 text NOT NULL,
+    ingrediënt6 text NOT NULL,
     tijd int NOT NULL,
     rating int
 )

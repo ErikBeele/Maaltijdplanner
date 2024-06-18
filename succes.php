@@ -38,12 +38,12 @@
 
 $titel = $_POST["titel"];
 $gerecht = $_POST["type"];
-$ingrediënt1 = $_POST["ingrediënt 1"];
-$ingrediënt2 = $_POST["ingrediënt 2"];
-$ingrediënt3 = $_POST["ingrediënt 3"];
-$ingrediënt4 = $_POST["ingrediënt 4"];
-$ingrediënt5 = $_POST["ingrediënt 5"];
-$ingrediënt6 = $_POST["ingrediënt 6"];
+$ingrediënt1 = $_POST["ingrediënt"];
+$ingrediënt2 = $_POST["ingrediënt2"];
+$ingrediënt3 = $_POST["ingrediënt3"];
+$ingrediënt4 = $_POST["ingrediënt4"];
+$ingrediënt5 = $_POST["ingrediënt5"];
+$ingrediënt6 = $_POST["ingrediënt6"];
 $duur = $_POST["tijd"];
 $rating = $_POST["rating"];
 
@@ -56,7 +56,7 @@ try {
     $conn = new PDO("mysql:host=$dbhost;dbname=$dbname", $dbuser, $dbpass);
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     
-    $query = "INSERT INTO gerechten (titel, Type, ingrediënten, tijd, rating)
+    $query = "INSERT INTO gerechten (titel, Type, ingrediënt1, ingrediënt2, ingrediënt3, ingrediënt4, ingrediënt5, ingrediënt6, tijd, rating)
     VALUES ('$titel', '$gerecht', '$ingrediënt1', '$ingrediënt2', '$ingrediënt3', '$ingrediënt4', '$ingrediënt5', '$ingrediënt6', $duur, '$rating')";
 
     $stmt = $conn->prepare($query);
