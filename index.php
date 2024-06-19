@@ -47,13 +47,30 @@ try {
 
 
 <div class="aantalgerechten">
-        <form method="post">
+        <form method="post" action="toevoegen.php">
             <label for="num-gerechten">Selecteer het aantal Gerechten voor deze week:</label>
             <input type="number" id="num-gerechten" name="num-gerechten" min="1" max="7" required>
             <input type="checkbox" id="confirm" onchange="toggleInput()"> Ik bevestig mijn keuze
-            <button type="submit" href="toevoegen.php">Submit</button>
+            <button type="submit">Submit</button>
         </form>
     </div>
+
+    <script>
+        function toggleInput() {
+            const confirm = document.getElementById('confirm');
+            const numGerechten = document.getElementById('num-gerechten');
+            if (confirm.checked) {
+                numGerechten.disabled = false;
+
+            } else {
+                numGerechten.disabled = true;
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', (event) => {
+            toggleInput();
+        });
+        </script>
 
 
     <script>
