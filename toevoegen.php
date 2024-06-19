@@ -12,6 +12,7 @@
    <header>
     <nav>
         <ul>
+            <li><a href="index.php">Kiezen</a></li>
             <li><a href="overzicht.php">Maaltijden</a></li>
         </ul>
     </nav>
@@ -48,6 +49,4 @@
 
 </html>
 
-<a href="toevoegen.php">Toevoegen</a>
-<a href="index.php">kiezen</a>
 <a href="overzicht.php">Overzicht</a>

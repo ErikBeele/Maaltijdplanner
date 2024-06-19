@@ -18,14 +18,14 @@ body {
 
 header {
     background-color: #FF8C00;
-    padding: 1% 0;
+    padding: 10px 0;
 }
 
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 2%;
+    padding: 0 20px;
 }
 
 nav ul {
@@ -33,7 +33,7 @@ nav ul {
     margin: 0;
     padding: 0;
     display: flex;
-    gap: 2%;
+    gap: 20px;
 }
 
 nav ul li {
@@ -52,39 +52,39 @@ nav ul li a:hover {
 }
 
 .box {
-    max-width: 80%;
-    margin: 2% auto;
-    padding: 2%;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
     background-color: white;
-    border-radius: 1%;
-    box-shadow: 0 0 1% rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .form, .aantalgerechten {
-    margin-bottom: 1%;
-    height: 20%;
-    padding-left: 25%;
+    margin-bottom: 10px;
+    height: 200px;
+    padding-left: 250px;
 
 }
 
 label {
     display: block;
-    margin-bottom: 1%;
+    margin-bottom: 8px;
     font-weight: bold;
 }
 
 input[type="radio"], input[type="checkbox"] {
-    margin-right: 1%;
+    margin-right: 10px;
 }
 
 input[type="number"] {
     
-    margin-bottom: 1%;
+    margin-bottom: 10px;
     border: 1px solid #ccc;
     box-sizing: border-box;
     position: relative;
-    bottom: 3%;
-    left: 37%;
+    bottom: 34px;
+    left: 370px;
 
 }
 
@@ -93,7 +93,7 @@ button {
     background-color: #FF8C00;
     color: white;
     border: none;
-    padding: 1% 2%;
+    padding: 10px 20px;
     border-radius: 3px;
     cursor: pointer;
 }
@@ -107,8 +107,8 @@ footer {
     color: white;
     text-align: center;
     position: relative;
-    bottom: -1%;
-    width: 10%;
+    bottom: -10px;
+    width: 100%;
 }
 
 footer a {
@@ -136,8 +136,8 @@ footer a:hover {
 
 .toegevoegd {
     background-color: #e07b00;
-    border: 1% solid black;
+    border: 1px solid black;
     text-align: left;
-    padding: 8%;
-    width: 11%;
+    padding: 8px;
+    width: 110px;
 }

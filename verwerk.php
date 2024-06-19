@@ -13,6 +13,7 @@
     <nav>
         <ul>
             <li><a href="toevoegen.php">Toevoegen</a></li>
+            <li><a href="index.php">kiezen</a></li>
             <li><a href="overzicht.php">Overzicht</a></li>
         </ul>
     </nav>
