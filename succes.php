@@ -66,13 +66,13 @@ try {
     echo "<tr>";
     echo "<td> $titel </td>" . PHP_EOL;
     echo "<td> $gerecht </td>" . PHP_EOL;
+    echo "<td> $duur </td>" . PHP_EOL;
     echo "<td> $ingrediënt1 </td>" . PHP_EOL;
     echo "<td> $ingrediënt2 </td>" . PHP_EOL;
     echo "<td> $ingrediënt3 </td>" . PHP_EOL;
     echo "<td> $ingrediënt4 </td>" . PHP_EOL;
     echo "<td> $ingrediënt5 </td>" . PHP_EOL;
     echo "<td> $ingrediënt6 </td>" . PHP_EOL;
-    echo "<td> $duur </td>" . PHP_EOL;
     echo "<td> $rating </td>" . PHP_EOL;
     echo "</tr>";
     echo "gerecht toegevoegd." . PHP_EOL;
