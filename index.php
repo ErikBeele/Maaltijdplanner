@@ -34,7 +34,7 @@ try {
 
 
 <div class="form">
-    <form action="gerechten.php" method="POST">
+    <form action="order.php" method="POST">
         <label for="gerecht">Kies hier tussen de 3 voorkeur Ingrediënten</label><br>
         <input type="checkbox" class="gerechtenbox" name="gerecht[]" value="vlees" id="vlees">
         <label for="vlees" class="vlees">VLEES</label><br>
@@ -42,12 +42,9 @@ try {
         <label for="vis" class="vis">VIS</label><br>
         <input type="checkbox" class="gerechtenbox" name="gerecht[]" value="vegetarisch" id="vegetarisch">
         <label for="vegetarisch" class="vegetarisch">VEGATARISCH</label><br>
-    </form>
 </div>
 
-
 <div class="aantalgerechten">
-        <form method="post" action="verwerk.php">
             <label for="num-gerechten">Selecteer het aantal Gerechten voor deze week:</label>
             <input type="number" id="num-gerechten" name="num-gerechten" min="1" max="7" required>
             <input type="checkbox" id="confirm" onchange="toggleInput()"> Ik bevestig mijn keuze

@@ -2,6 +2,8 @@
 
 <?php
 
+print_r($_POST);
+
     $keuze = $_POST['gerecht'];
     $aantal = $_POST['num-gerechten'];
 
