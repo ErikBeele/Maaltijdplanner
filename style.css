@@ -17,7 +17,7 @@ body {
 }
 
 header {
-    background-color: #FF8C00;
+    background-color: #556B2F;
     padding: 10px 0;
 }
 
@@ -55,7 +55,7 @@ nav ul li a:hover {
     max-width: 800px;
     margin: 20px auto;
     padding: 20px;
-    background-color: white;
+    background-color: aliceblue;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -68,6 +68,7 @@ nav ul li a:hover {
 }
 
 label {
+    color: darkgreen;
     display: block;
     margin-bottom: 8px;
     font-weight: bold;
@@ -90,7 +91,7 @@ input[type="number"] {
 
 button {
     display: inline-block;
-    background-color: #FF8C00;
+    background-color: #556B2F;
     color: white;
     border: none;
     padding: 10px 20px;
@@ -99,11 +100,11 @@ button {
 }
 
 button:hover {
-    background-color: #e07b00;
+    background-color: #556B2F;
 }
 
 footer {
-    background-color: #FF8C00;
+    background-color: #556B2F;
     color: white;
     text-align: center;
     position: relative;
@@ -135,7 +136,7 @@ footer a:hover {
 }
 
 .toegevoegd {
-    background-color: #e07b00;
+    background-color: #81bb1d;
     border: 1px solid black;
     text-align: left;
     padding: 8px;
