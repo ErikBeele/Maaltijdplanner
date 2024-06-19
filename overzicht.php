@@ -50,12 +50,12 @@ try {
         echo "<tr>";
         echo "<td>" . $row['titel'] . "</td>" . PHP_EOL;
         echo "<td>" . $row['type'] . "</td>" . PHP_EOL;
-        echo "<td>" . $row['ingrediënt 1'] . "</td>" . PHP_EOL;
-        echo "<td>" . $row['ingrediënt 2'] . "</td>" . PHP_EOL;
-        echo "<td>" . $row['ingrediënt 3'] . "</td>" . PHP_EOL;
-        echo "<td>" . $row['ingrediënt 4'] . "</td>" . PHP_EOL;
-        echo "<td>" . $row['ingrediënt 5'] . "</td>" . PHP_EOL;
-        echo "<td>" . $row['ingrediënt 6'] . "</td>" . PHP_EOL;
+        echo "<td>" . $row['ingrediënt1'] . "</td>" . PHP_EOL;
+        echo "<td>" . $row['ingrediënt2'] . "</td>" . PHP_EOL;
+        echo "<td>" . $row['ingrediënt3'] . "</td>" . PHP_EOL;
+        echo "<td>" . $row['ingrediënt4'] . "</td>" . PHP_EOL;
+        echo "<td>" . $row['ingrediënt5'] . "</td>" . PHP_EOL;
+        echo "<td>" . $row['ingrediënt6'] . "</td>" . PHP_EOL;
         echo "<td>" . $row['tijd'] . "</td>" . PHP_EOL;
         echo "<td>" . $row['rating'] . "</td>" . PHP_EOL;
         echo "</tr>";
