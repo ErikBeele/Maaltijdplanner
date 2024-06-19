@@ -47,7 +47,7 @@ try {
 
 
 <div class="aantalgerechten">
-        <form method="post" action="toevoegen.php">
+        <form method="post" action="verwerk.php">
             <label for="num-gerechten">Selecteer het aantal Gerechten voor deze week:</label>
             <input type="number" id="num-gerechten" name="num-gerechten" min="1" max="7" required>
             <input type="checkbox" id="confirm" onchange="toggleInput()"> Ik bevestig mijn keuze
