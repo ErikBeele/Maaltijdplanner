@@ -97,7 +97,29 @@ try {
 
                 const totalSelected = vleesCount + visCount + vegetarischCount;
 
-               
+                if (totalSelected > numGerechten) {
+                    alert("Het totaal aantal gerechten mag niet hoger zijn dan " + numGerechten + ".");
+                    return false;
+                }
+            }
+
+            function validateForm() {
+                const numGerechten = parseInt(document.getElementById('num-gerechten').value);
+                const vleesCount = parseInt(document.getElementsByName('vlees-count')[0]?.value || 0);
+                const visCount = parseInt(document.getElementsByName('vis-count')[0]?.value || 0);
+                const vegetarischCount = parseInt(document.getElementsByName('vegetarisch-count')[0]?.value || 0);
+
+                const totalSelected = vleesCount + visCount + vegetarischCount;
+
+                if (totalSelected !== numGerechten) {
+                    alert("Het totaal aantal gerechten moet gelijk zijn aan " + numGerechten + ".");
+                    return false;
+                }
+                return true;
+            }
+        </script>
+
+       
    
 <footer>
     <p>MADE BY:</p>
