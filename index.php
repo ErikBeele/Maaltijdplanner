@@ -31,8 +31,6 @@ try {
     $stmt->execute(); 
 ?>
 
-
-
 <div class="form">
     <form action="overzicht.php" method="POST">
         <label for="gerecht">Kies hier tussen de 3 voorkeur Ingrediënten</label><br>

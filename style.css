@@ -6,6 +6,7 @@
 .form {
     display: flex;
     align-items: center;
+    height: 300px;
 } 
 
 body {
@@ -59,7 +60,7 @@ nav ul li a:hover {
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
- 
+
 label {
     color: darkgreen;
     display: block;
