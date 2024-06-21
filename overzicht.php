@@ -33,6 +33,12 @@
     </tr>
 
    <?php
+
+    print_r($_POST);
+
+    $keuze = $_POST['gerecht'];
+    $aantal = $_POST['num-gerechten'];
+
     $dbhost = "localhost";
     $dbname = "maaltijdplanner";
     $dbuser = "bit_academy";

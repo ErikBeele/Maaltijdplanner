@@ -34,7 +34,7 @@ try {
 
 
 <div class="form">
-    <form action="order.php" method="POST">
+    <form action="overzicht.php" method="POST">
         <label for="gerecht">Kies hier tussen de 3 voorkeur Ingrediënten</label><br>
         <input type="checkbox" class="gerechtenbox" name="gerecht[]" value="vlees" id="vlees">
         <label for="vlees" class="vlees">VLEES</label><br>
