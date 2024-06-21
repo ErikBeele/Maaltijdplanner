@@ -45,10 +45,11 @@ try {
 <div class="aantalgerechten">
             <label for="num-gerechten">Selecteer het aantal Gerechten voor deze week:</label>
             <input type="number" id="num-gerechten" name="num-gerechten" min="1" max="7" required>
+            <div id="ingredient-inputs"></div>
             <input type="checkbox" id="confirm" onchange="toggleInput()"> Ik bevestig mijn keuze
             <button type="submit">Submit</button>
-        </form>
-    </div>
+            </form>
+        </div>
 
     <script>
         function toggleInput() {
