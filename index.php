@@ -76,45 +76,28 @@ try {
 
             document.getElementById('num-gerechten').addEventListener('input', generateIngredientInputs);
 
-  //  <script>
-        function validateForm() {
-            var numGerechten = document.getElementById('num-gerechten').value;
-            if (numGerechten > 7) {
-                alert("Het aantal Gerechten kan niet hoger zijn dan 7.");
-                return false;
+            function toggleInput() {
+                const confirm = document.getElementById('confirm');
+                const numGerechten = document.getElementById('num-gerechten');
+                numGerechten.disabled = !confirm.checked;
+                if (confirm.checked) {
+                    generateIngredientInputs();
+                }
             }
-            return true;
-        }
 
-        document.getElementById('num-gerechten').addEventListener('input', function() {
-            if (this.value > 7) {
-                this.value = 7;
-            }
-        });
+            document.addEventListener('DOMContentLoaded', (event) => {
+                toggleInput();
+            });
 
-        function toggleInput() {
-            var checkbox = document.getElementById('confirm');
-            var input = document.getElementById('num-gerechten');
-            if (checkbox.checked) {
-                input.disabled = true;
-            } else {
-                input.disabled = false;
-            }
-        }
-    </script>
+            function checkTotal() {
+                const numGerechten = parseInt(document.getElementById('num-gerechten').value);
+                const vleesCount = parseInt(document.getElementsByName('vlees-count')[0]?.value || 0);
+                const visCount = parseInt(document.getElementsByName('vis-count')[0]?.value || 0);
+                const vegetarischCount = parseInt(document.getElementsByName('vegetarisch-count')[0]?.value || 0);
 
-<?php
-} catch (PDOException $err) {
-    echo "Database avoided the connection. " . $err->getMessage() ;
-    exit();
-}
+                const totalSelected = vleesCount + visCount + vegetarischCount;
 
-?>
-
-</table>
-
-
-</form>
+               
    
 <footer>
     <p>MADE BY:</p>
