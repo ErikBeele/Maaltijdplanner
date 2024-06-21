@@ -51,25 +51,32 @@ try {
             </form>
         </div>
 
-    <script>
-        function toggleInput() {
-            const confirm = document.getElementById('confirm');
-            const numGerechten = document.getElementById('num-gerechten');
-            if (confirm.checked) {
-                numGerechten.disabled = false;
+        <script>
+            function generateIngredientInputs() {
+                const num = parseInt(document.getElementById('num-gerechten').value);
+                const container = document.getElementById('ingredient-inputs');
+                const vleesChecked = document.getElementById('vlees').checked;
+                const visChecked = document.getElementById('vis').checked;
+                const vegetarischChecked = document.getElementById('vegetarisch').checked;
 
-            } else {
-                numGerechten.disabled = true;
+                container.innerHTML = '';
+
+                if (num > 0) {
+                    if (vleesChecked) {
+                        container.innerHTML += '<label>Vlees:</label><input type="number" name="vlees-count" min="0" max="' + num + '" oninput="checkTotal();" required><br>';
+                    }
+                    if (visChecked) {
+                        container.innerHTML += '<label>Vis:</label><input type="number" name="vis-count" min="0" max="' + num + '" oninput="checkTotal();" required><br>';
+                    }
+                    if (vegetarischChecked) {
+                        container.innerHTML += '<label>Vegetarisch:</label><input type="number" name="vegetarisch-count" min="0" max="' + num + '" oninput="checkTotal();" required><br>';
+                    }
+                }
             }
-        }
 
-        document.addEventListener('DOMContentLoaded', (event) => {
-            toggleInput();
-        });
-        </script>
+            document.getElementById('num-gerechten').addEventListener('input', generateIngredientInputs);
 
-
-    <script>
+  //  <script>
         function validateForm() {
             var numGerechten = document.getElementById('num-gerechten').value;
             if (numGerechten > 7) {
