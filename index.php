@@ -119,7 +119,26 @@ try {
             }
         </script>
 
-       
+<?php
+            } catch (PDOException $err) {
+                echo "Database connection failed: " . $err->getMessage();
+                exit();
+            }
+
+            if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+                $keuze = $_POST['gerecht'] ?? [];
+                $aantal = $_POST['num-gerechten'] ?? 0;
+                $vleesCount = $_POST['vlees-count'] ?? 0;
+                $visCount = $_POST['vis-count'] ?? 0;
+                $vegetarischCount = $_POST['vegetarisch-count'] ?? 0;
+
+                echo "Gerecht: " . implode(', ', $keuze) . "<br>";
+                echo "Aantal: " . htmlspecialchars($aantal) . "<br>";
+                echo "Vlees: " . htmlspecialchars($vleesCount) . "<br>";
+                echo "Vis: " . htmlspecialchars($visCount) . "<br>";
+                echo "Vegetarisch: " . htmlspecialchars($vegetarischCount) . "<br>";
+            }
+        ?>          
    
 <footer>
     <p>MADE BY:</p>
