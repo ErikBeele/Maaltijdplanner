@@ -18,7 +18,7 @@
     </nav>
    </header>
 
-    <form action="succes.php" method="POST">
+    <form action="succes.php boodschappenlijst.php" method="POST">
         <label for="titel">Titel:</label><br>
         <input type="text" id="titel" name="titel"><br>
         <label for="type">is het gerecht vlees, vis of vegetarisch?</</label><br>
