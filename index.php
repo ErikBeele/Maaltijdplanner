@@ -14,6 +14,7 @@
         <ul>
             <li><a href="toevoegen.php">Toevoegen</a></li>
             <li><a href="overzicht.php">Maaltijden</a></li>
+            <li><a href="boodschappenlijst.php">boodschappenlijst</a></li>
         </ul>
     </nav>
    </header>
