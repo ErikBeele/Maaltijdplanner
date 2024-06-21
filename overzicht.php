@@ -74,26 +74,12 @@ try {
         $ingredient5 = $_POST['ingrediënt5'];
         $ingredient6 = $_POST['ingrediënt6'];
 
-        echo "<label for='ingrediënt'>Ingrediënt 1:</label><br>";
-        echo "<input type='text' id='ingrediënt' name='ingrediënt' value='$ingredient1'><br>";
-        echo "<label for='ingrediënt2'>Ingrediënt 2:</label><br>";
-        echo "<input type='text' id='ingrediënt2' name='ingrediënt2' value='$ingredient2'><br>";
-        echo "<label for='ingrediënt3'>Ingrediënt 3:</label><br>";
-        echo "<input type='text' id='ingrediënt3' name='ingrediënt3' value='$ingredient3'><br>";
-        echo "<label for='ingrediënt4'>Ingrediënt 4:</label><br>";
-        echo "<input type='text' id='ingrediënt4' name='ingrediënt4' value='$ingredient4'><br>";
-        echo "<label for='ingrediënt'>Ingrediënt 5:</label><br>";
-        echo "<input type='text' id='ingrediënt5' name='ingrediënt5' value='$ingredient5'><br>";
-        echo "<label for='ingrediënt6'>Ingrediënt 6:</label><br>";
-        echo "<input type='text' id='ingrediënt6' name='ingrediënt6' value='$ingredient6'><br>";
     }
 } catch (PDOException $err) {
     echo "Database couldn't reach the connection. " . $err->getMessage() ;
     exit(); 
 }
 ?>
-
-<th><a href="index.php">Kiezen</a></th>
 
 </table>
 </body>
