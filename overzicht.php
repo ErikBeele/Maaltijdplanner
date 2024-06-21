@@ -36,7 +36,7 @@
 
     $keuze = $_POST['gerecht'];
     $aantal = $_POST['num-gerechten'];
-
+print_r($_POST);
     $dbhost = "localhost";
     $dbname = "maaltijdplanner";
     $dbuser = "bit_academy";
