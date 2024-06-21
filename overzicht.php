@@ -50,27 +50,8 @@ try {
     $stmt->execute(); 
 
     while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
-        echo "<div class='tabel'>";
-        echo "<tr>";
-        echo "<td>" . $row['titel'] . "</td>" . PHP_EOL;
-        echo "<td>" . $row['type'] . "</td>" . PHP_EOL;
-        echo "<td>" . $row['ingrediënt1'] . "</td>" . PHP_EOL;
-        echo "<td>" . $row['ingrediënt2'] . "</td>" . PHP_EOL;
-        echo "<td>" . $row['ingrediënt3'] . "</td>" . PHP_EOL;
-        echo "<td>" . $row['ingrediënt4'] . "</td>" . PHP_EOL;
-        echo "<td>" . $row['ingrediënt5'] . "</td>" . PHP_EOL;
-        echo "<td>" . $row['ingrediënt6'] . "</td>" . PHP_EOL;
-        echo "<td>" . $row['tijd'] . "</td>" . PHP_EOL;
-        echo "<td>" . $row['rating'] . "</td>" . PHP_EOL;
-        echo "</tr>";
-        echo "</div>";
-
-        $ingredient1 = $_POST['ingrediënt1'];
-        $ingredient2 = $_POST['ingrediënt2'];
-        $ingredient3 = $_POST['ingrediënt3'];
-        $ingredient4 = $_POST['ingrediënt4'];
-        $ingredient5 = $_POST['ingrediënt5'];
-        $ingredient6 = $_POST['ingrediënt6'];
+       
+        
 
     }
 } catch (PDOException $err) {
