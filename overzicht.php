@@ -36,7 +36,13 @@
 
     $keuze = $_POST['gerecht'];
     $aantal = $_POST['num-gerechten'];
-print_r($_POST);
+
+    print_r($_POST);
+
+    foreach ($keuze as $key => $gerecht) {
+        echo $gerecht;
+    }
+
     $dbhost = "localhost";
     $dbname = "maaltijdplanner";
     $dbuser = "bit_academy";
@@ -46,7 +52,7 @@ try {
     $conn = new PDO("mysql:host=$dbhost;dbname=$dbname", $dbuser, $dbpass);
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-    $stmt = $conn->prepare("SELECT * FROM gerechten ");
+    $stmt = $conn->prepare("SELECT * FROM gerechten WHERE ");
     $stmt->execute(); 
 
     while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
