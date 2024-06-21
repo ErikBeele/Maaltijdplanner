@@ -13,9 +13,7 @@ try {
     $stmt->execute(); 
 
     while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
-        foreach ($ingredienten as $key => $ingredient) {
-            # code...
-        }
+        
     }
 } catch (PDOException $err) {
     echo "Database couldn't reach the connection. " . $err->getMessage() ;
