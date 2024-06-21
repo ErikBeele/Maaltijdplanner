@@ -13,7 +13,7 @@
     <nav>
         <ul>
             <li><a href="toevoegen.php">Toevoegen</a></li>
-            <li><a href="index.php">K iezen</a></li>
+            <li><a href="index.php">Kiezen</a></li>
             <li><a href="overzicht.php">Maaltijd</a></li>
         </ul>
     </nav>
