@@ -39,7 +39,7 @@
 
     print_r($_POST);
 
-    foreach ($keuze as $key => $gerecht) {
+    foreach ($keuze as $keuze => $gerecht) {
         echo $gerecht;
     }
 
@@ -52,7 +52,7 @@ try {
     $conn = new PDO("mysql:host=$dbhost;dbname=$dbname", $dbuser, $dbpass);
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-    $stmt = $conn->prepare("SELECT * FROM gerechten WHERE ");
+    $stmt = $conn->prepare("SELECT * FROM gerechten ");
     $stmt->execute(); 
 
     while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
