@@ -14,6 +14,8 @@
         <ul>
             <li><a href="index.php">Kiezen</a></li>
             <li><a href="overzicht.php">Maaltijden</a></li>
+            <li><a href="ingrediëntenlijst.php">ingrediëntenlijst</a></li>
+
         </ul>
     </nav>
    </header>

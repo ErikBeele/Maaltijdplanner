@@ -33,4 +33,10 @@ try {
     echo "Database connection failed: " . $err->getMessage();
     exit();
 }
+
+
 ?>
+
+<body>
+    <li><a href="index.php">terug naar main page</a></li>
+</body>

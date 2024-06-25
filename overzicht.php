@@ -14,6 +14,7 @@
         <ul>
             <li><a href="toevoegen.php">Toevoegen</a></li>
             <li><a href="index.php">Kiezen</a></li>
+            <li><a href="ingrediëntenlijst.php">ingrediëntenlijst</a></li>
         </ul>
     </nav>
    </header>
