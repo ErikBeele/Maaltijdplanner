@@ -16,7 +16,7 @@ try {
     
     if($gerechten) {
         foreach ($gerechten as $gerecht) {
-            echo "<h2>" . ($gerecht) . "<h2>";
+            echo "<h2>" . htmlspecialchars($gerecht['titel']) . "</h2>";
             echo "<ul>";
             for ($i = 1; $i <= 6; $i++) {
                 $ingredient = $gerecht["ingrediënt$i"];
