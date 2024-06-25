@@ -34,14 +34,8 @@
 
    <?php
 
-    $keuze = $_POST['gerecht'];
+    $bestelling = $_POST['gerecht'];
     $aantal = $_POST['num-gerechten'];
-
-    print_r($_POST);
-
-    foreach ($keuze as $keuze => $gerecht) {
-        echo $gerecht;
-    }
 
     $dbhost = "localhost";
     $dbname = "maaltijdplanner";
@@ -57,8 +51,18 @@ try {
 
     while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
        
-        
+        print_r($_POST);
 
+        foreach ($bestelling as $key1 => $gerecht) {
+            foreach ($gerecht as $key2 => $maaltijd) {
+                echo $maaltijd;
+            }
+        } 
+        foreach ($aantal as $key3 => $aan) {
+            foreach ($aan as $key4 => $hoeveel) {
+                echo $hoeveel;
+            }
+        } 
     }
 } catch (PDOException $err) {
     echo "Database couldn't reach the connection. " . $err->getMessage() ;
