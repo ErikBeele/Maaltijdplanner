@@ -1,9 +1,13 @@
+--Als er al een database genaamd "Maaltijdplanner" al bestaat wordt die verwijderd
 DROP DATABASE IF EXISTS `Maaltijdplanner`;
 
+--Database "Maaltijdplanner" word gecreeërd
 Create DATABASE Maaltijdplanner;
 
+--Zorgt ervoor dat database "Maaltijdplanner" wordt gebruikt
 USE Maaltijdplanner;
 
+--Creeërt tabel "Gerechten" met ID, titel, type, 6 ingrediënten, bereidingstijd en de rating
 Create TABLE Gerechten (
     ID int NOT NULL AUTO_INCREMENT,
     PRIMARY KEY (ID),

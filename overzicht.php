@@ -60,6 +60,7 @@
 
         foreach ($gerechten as $rij) {
             if (in_array($rij['type'], $bestelling)) {
+                echo "<div class='lijst'>";
                 echo "<tr>";
                 echo "<td>" . htmlspecialchars($rij['titel']) . "</td>";
                 echo "<td>" . htmlspecialchars($rij['type']) . "</td>";
@@ -69,6 +70,7 @@
                 echo "<td>" . htmlspecialchars($rij['tijd']) . "</td>";
                 echo "<td>" . htmlspecialchars($rij['rating']) . "</td>";
                 echo "</tr>";
+                echo "</div>";
             }
         }
     } catch (PDOException $err) {
