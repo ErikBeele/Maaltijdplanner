@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 
+<!--Verbindt stylesheets met de index.php--->
 <head>
 <title>Maaltijdplanner</title>
 <link rel="stylesheet" href="style.css">
@@ -10,6 +11,7 @@
 <body>
     <div class="box">
    <header>
+        <!---navbar zodat je makkelijk van pagina kan wisselen---->
     <nav>
         <ul>
             <li><a href="index.php">Kiezen</a></li>
@@ -20,6 +22,7 @@
     </nav>
    </header>
 
+ <!---Een form zodat je zelf je eigen recepten kan toevoegen-->
     <form action="succes.php" method="POST">
         <label for="titel">Titel:</label><br>
         <input type="text" id="titel" name="titel"><br>
@@ -50,5 +53,3 @@
     </form>
 
 </html>
-
-<a href="overzicht.php">Overzicht</a>
