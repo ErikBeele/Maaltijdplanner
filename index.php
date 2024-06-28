@@ -6,7 +6,7 @@
 <link rel="stylesheet" href="navbar.css">
 <link rel="stylesheet" href="form.css">
 </head>
-
+<!-- head bevat title en links naar de styling voor de pagina -->
 <body>
     <div class="box">
    <header>
@@ -15,6 +15,7 @@
             <li><a href="toevoegen.php">Toevoegen</a></li>
             <li><a href="overzicht.php">Maaltijden</a></li>
             <li><a href="ingrediëntenlijst.php">ingrediëntenlijst</a></li>
+<!-- de nav,ul en de li bevat de links naar de andere paginas die in de navbar zitten -->
         </ul>
     </nav>
    </header>
@@ -23,13 +24,14 @@
     $dbname = "maaltijdplanner";
     $dbuser = "bit_academy";
     $dbpass = "bit_academy";
-
+// hierboven staan de gegevens die we gebruiken om verbinding te maken met de database.
 try { 
     $conn = new PDO("mysql:host=$dbhost;dbname=$dbname", $dbuser, $dbpass);
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-
+// bij $conn zijn de gegevens die nodig zijn om een database connectie te laten werken.
     $stmt = $conn->prepare("SELECT * FROM gerechten ");
     $stmt->execute(); 
+    // de $stmt prepared de de gegevens op van de gerechten en execute het.
 ?>
 
 <div class="form">
@@ -41,7 +43,8 @@ try {
         <label for="vis" class="vis">VIS</label><br>
         <input type="checkbox" class="gerechtenbox" name="gerecht[]" value="vegetarisch" id="vegetarisch">
         <label for="vegetarisch" class="vegetarisch">VEGATARISCH</label><br>
-</div>
+</div>    <!-- hier is de opbouw van de form de action zorgt voor waar het naar verstuurd wordt -->
+          <!-- de code hierboven zorgt ervoor dat je de keuze kan maken tussen vlees,vis,vegatairsch -->
 
 <div class="aantalgerechten">
             <label for="num-gerechten">Selecteer het aantal Gerechten voor deze week:</label>
@@ -51,14 +54,18 @@ try {
             <button type="submit">Submit</button>
             </form>
         </div>
-
-        <script>
+<!-- de code hierboven zorgt de code ervoor dat je kan aangeven hoeveel gerechten je wilt voor aankomende week. -->
+<!-- als je de keuze bevestigd krijg je de keuze om te kiezen hoeveel gerechten van welk ingredient je wilt -->
+       
+       <script>
             function generateIngredientInputs() {
                 const num = parseInt(document.getElementById('num-gerechten').value);
                 const container = document.getElementById('ingredient-inputs');
                 const vleesChecked = document.getElementById('vlees').checked;
                 const visChecked = document.getElementById('vis').checked;
                 const vegetarischChecked = document.getElementById('vegetarisch').checked;
+// Deze functie haalt het aantal gerechten op dat de gebruiker heeft ingevoerd en controleert welke ingrediëntencheckboxen zijn aangevinkt.
+// daarna genereert het invoervelden voor de geselecteerde ingrediënten in de container.
 
                 container.innerHTML = '';
 
@@ -74,7 +81,7 @@ try {
                     }
                 }
             }
-
+// code hierboven zorgt ervoor dat als de ingredient wordt geselecteerd het verder wordt verwerkt en opteld hoeveel er totaal zijn.
             document.getElementById('num-gerechten').addEventListener('input', generateIngredientInputs);
 
             function toggleInput() {
@@ -89,7 +96,7 @@ try {
             document.addEventListener('DOMContentLoaded', (event) => {
                 toggleInput();
             });
-
+// code hierboven checkt of de functie checkbox ID is aangevinkt als het true is wordt het verder verwerkt als het false is gebeurt er niks mee.
             function checkTotal() {
                 const numGerechten = parseInt(document.getElementById('num-gerechten').value);
                 const vleesCount = parseInt(document.getElementsByName('vlees-count')[0]?.value || 0);
@@ -102,7 +109,8 @@ try {
                     alert("Het totaal aantal gerechten mag niet hoger zijn dan " + numGerechten + ".");
                     return false;
                 }
-            }
+            } // code hierboven zorgt ervoor dat er niet meer ingredienten geselecteerd kunnen zijn dan het aantal selecteerde gerechten.
+             
 
             function validateForm() {
                 const numGerechten = parseInt(document.getElementById('num-gerechten').value);
@@ -117,8 +125,8 @@ try {
                     return false;
                 }
                 return true;
-            }
-        </script>
+            } // code hierboven count het aantal gerechten en ingredienten en zorgt ervoor dat het aantal gerechten gelijk moet zijn aan aantal gerechten.
+        </script> 
 
 <?php
             } catch (PDOException $err) {
@@ -139,7 +147,10 @@ try {
                 echo "Vis: " . htmlspecialchars($visCount) . "<br>";
                 echo "Vegetarisch: " . htmlspecialchars($vegetarischCount) . "<br>";
             }
-        ?>          
+            // code hierboven zorgt ervoor dat als er een foutmelding is het wordt aangegeven exit() stopt het als er een fout optreedt
+            // ook wordt er gecheckt of er gebruik wordt gemaakt van post wat beteknd dat het formulier is ingediend.
+            // count zorgt ervoor dat er wordt gecheckt hoeveel ervan zijn.
+       ?>          
    
 <footer>
     <p>MADE BY:</p>
@@ -149,6 +160,6 @@ try {
     </div>
 </body>
 
-
+        <!-- de footer bevat onze contactgegevens hier is gebruik gemaakt van <p> tag omdat je hiermee makkelijk kan schrijven.  -->
 
 </html>
