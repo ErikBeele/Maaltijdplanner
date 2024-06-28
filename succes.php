@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 
+<!--Verbindt stylesheets met de index.php--->
+
 <head>
 <title>Maaltijdplanner</title>
 <link rel="stylesheet" href="style.css">
@@ -10,6 +12,7 @@
 <body>
     <div class="box">
    <header>
+    <!---navbar zodat je makkelijk van pagina kan wisselen---->
     <nav>
         <ul>
             <li><a href="toevoegen.php">Toevoegen</a></li>
@@ -20,8 +23,8 @@
    </header>
 
 <h2>Toegevoegd</h2>
-
 <table class="toegevoegd">
+    <!----Creeërt dee bovenste rij--->
     <tr>
         <th>titel</th>
         <th>gerecht</th>
@@ -36,6 +39,7 @@
     </tr>
 
 <?php
+//Zet de gegevens van de ingevulde gegevens van toevoegen.php in een variabel.
 
 $titel = $_POST["titel"];
 $gerecht = $_POST["type"];
@@ -48,11 +52,14 @@ $ingrediënt6 = $_POST["ingrediënt6"];
 $duur = $_POST["tijd"];
 $rating = $_POST["rating"];
 
+//De gegevens voorde connectie met de daatabase.
 $dbhost = "localhost";
 $dbname = "maaltijdplanner";
 $dbuser = "bit_academy";
 $dbpass = "bit_academy";
 
+//Als de connectie werkt de database wordt gevuld met de gegevens die jij bij toevoegen.php hebt toegevoegd en daarna gerprint.
+//Als de database is niet gevonden krijg je een bericht dat de database de connectie heeft ontweken.
 try { 
     $conn = new PDO("mysql:host=$dbhost;dbname=$dbname", $dbuser, $dbpass);
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
@@ -81,11 +88,6 @@ try {
     exit();
 }
 ?>
-
-<a href="toevoegen.php">Toevoegen</a>
-<a href="index.php">Kiezen</a>
-<a href="overzicht.php">Overzicht</a>
-
 </table>
     </div>
 </html>
