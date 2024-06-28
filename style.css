@@ -46,8 +46,7 @@ nav ul li a {
     text-decoration: none;
     color: white;
     font-weight: bold;
-    margin: 40px;
-    
+    margin: 40px; 
 }
 
 nav ul li a:hover {
@@ -82,7 +81,6 @@ input[type="number"] {
     position: relative;
     bottom: 34px;
     left: 370px;
-
 }
 
 button {
@@ -124,7 +122,6 @@ footer a:hover {
 
 .vis {
     background-color: #aec6cf;
-    
 }
 
 .vegetarisch {
