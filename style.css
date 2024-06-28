@@ -28,6 +28,7 @@ nav {
     justify-content: space-between;
     align-items: center;
     padding: 0 20px;
+    width: 800px;
 }
 
 nav ul {
@@ -54,7 +55,7 @@ nav ul li a:hover {
 }
 
 .box {
-    max-width: 800px;
+    max-width: 900px;
     margin: 20px auto;
     padding: 20px;
     background-color: aliceblue;
@@ -133,5 +134,9 @@ footer a:hover {
     border: 1px solid black;
     text-align: left;
     padding: 8px;
-    width: 110px;
-}
+    width: auto;
+    }
+    
+    th {
+        width: 200px;
+    }
